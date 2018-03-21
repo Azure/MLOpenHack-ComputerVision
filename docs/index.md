@@ -2,12 +2,12 @@
 
 ## Setting up your WorkSpace
 
-### Ubuntu Data Science Virtual Machine (DSVM)
+**Ubuntu Data Science Virtual Machine (DSVM)**
 
-* Introduction to the Azure Data Science Virtual Machine [Link](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview)
-* Create a Linux Data Science Virtual Machine (DSVM) and use JupyterHub to code with a team - [Video](https://www.youtube.com/watch?v=4b1G9pQC3KM) or [Doc]("https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough#jupyterhub)
+* Introduction to the Azure Data Science Virtual Machine [Ref](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/overview)
+* Create a Linux Data Science Virtual Machine (DSVM) and use JupyterHub to code with a team - [Video](https://www.youtube.com/watch?v=4b1G9pQC3KM) or [Doc](https://docs.microsoft.com/en-us/azure/machine-learning/data-science-virtual-machine/linux-dsvm-walkthrough#jupyterhub)
 
-### Local Setup
+**Local Setup**
 
 * Install Anaconda if you don't have it for your system [Installation information](https://docs.anaconda.com/anaconda/install/)
 * Getting started with conda <a href="https://conda.io/docs/user-guide/getting-started.html" target="_blank">Doc</a>
@@ -21,7 +21,6 @@
 * Definitions of some common Machine Learning terms <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/what-is-machine-learning#key-machine-learning-terms-and-concepts" target="_blank">Ref</a>
 * Classification description <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/data-science-for-beginners-the-5-questions-data-science-answers#question-1-is-this-a-or-b-uses-classification-algorithms" target="_blank">Ref</a>
 * Overview diagram of the Machine Learning process <a href="https://blogs.msdn.microsoft.com/continuous_learning/2014/11/15/end-to-end-predictive-model-in-azureml-using-linear-regression/" target="_blank">Docs</a>
-
 
 **Jupyter and Managing Packages**
 
@@ -59,14 +58,6 @@
 
 * Pixel intensity normalization example <a href="https://stackoverflow.com/questions/7422204/intensity-normalization-of-image-using-pythonpil-speed-issues" target="_blank">Ref</a>
 
-## Hints
-
-* The `numpy` package is great for image manipulation
-* The `numpy` package can be used for I/O as well (<a href="https://docs.scipy.org/doc/numpy-1.13.0/reference/routines.io.html" target="_blank">Ref</a>) - quicker than `pandas` I/O
-* Some ways to "strech" the pixel range of an image include:  pixel-intensity normalizing or equalizing the image histogram.  Explore stackoverflow and PIL for some ideas.
-* In `matplotlib` a pixel value of 0 for all channels appears black, 1 appears white, and 255 appears black.
-* In `opencv` images are read in a BGR whereas `matplotlib` reads and expects images as RGB.  Conversion information can be found <a href="https://www.scivision.co/numpy-image-bgr-to-rgb/" target="_blank">here</a>
-
 ## First Custom ML
 
 * `scikit-learn` algorithm cheatsheet <a href="http://scikit-learn.org/stable/index.html" target="_blank">Ref</a>
@@ -99,8 +90,6 @@ Deep Learning Frameworks
 
 ## Deployment
 
-
-**Read Me First**
 * Overview of Azure ML model management <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview" target="_blank">Doc</a>
 * Deployment walkthrough <a href="https://michhar.github.io/deploy-with-azureml-cli-boldly/" target="_blank">Ref</a>
 
@@ -121,35 +110,27 @@ Deep Learning Frameworks
 
 * Docker Docs <a href="https://docs.docker.com/get-started/" target="_blank">Ref</a>
 
-## Hints
-
-* There are different input data type options for sending up to the service and you can specify this when you generate the schema for the service call.
-* The team must install the Azure ML CLI into the system Python if using a DSVM and the main Python in a local setup with (from this [Doc](https://docs.microsoft.com/en-us/azure/machine-learning/preview/deployment-setup-configuration#using-the-cli)):
-    `! sudo pip install -r https://aka.ms/az-ml-o16n-cli-requirements-file`
-* When creating the image with the `az ml` cli, remember to include all files necessary with the `-d` flag such as the `conda_dep.yml` or any label files.  Avoid using the `-c` flag for the `conda_dep.yml` file, using `-d` instead.  Also, a `requirements.txt` file, with the `pip` installable packages, should be specified with the `-p` flag.
-* Cluster deployment:  Refer to the rest of this <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/deployment-setup-configuration#environment-setup">Doc</a>
-
 ## General Resources
 
-### Longer Courses
+**Longer Courses**
 
-* Andrew Ng [traditional](https://www.coursera.org/learn/machine-learning) and [deep learning](https://www.coursera.org/specializations/deep-learning)
+* Coursera courses from Andrew Ng on [traditional](https://www.coursera.org/learn/machine-learning) and [deep learning](https://www.coursera.org/specializations/deep-learning)
 * Microsoft Professional Program [Data Science](https://academy.microsoft.com/en-us/professional-program/tracks/data-science/)
 * **Coming Soon** Microsoft Professional Program [Artificial Intelligence](https://academy.microsoft.com/en-us/professional-program/tracks/artificial-intelligence/)
 
-### Videos
+**Videos**
 
 * Channel 9 AI Show [Link](https://channel9.msdn.com/Shows/AI-Show)
 
-### Tutorials/Examples
+**Tutorials/Examples**
 
 * Microsoft AI school [Link](https://aischool.microsoft.com/learning-paths)
+* AI Developer on Azure resources [Link](https://learnanalytics.microsoft.com/learningpaths/developing-advanced-ai-applications)
 
-### Books
+**Books**
 
 * Jake VanderPlas - The Data Science Handbook (Free on Azure Notebooks) [Link](https://notebooks.azure.com/jakevdp/libraries/pythondatasciencehandbook)
 
-### Competitions
+**Competitions**
 
 * Kaggle has competitions and can be a source of datasets and interesting notebooks [Link](https://www.kaggle.com/)
-
