@@ -1,4 +1,4 @@
-#!/usr/bin/env sh
+!/usr/bin/env sh
 
 # Run this script to deploy the app to Github Pages.
 
