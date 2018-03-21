@@ -1,7 +1,6 @@
 site_name: Computer Vision ML OpenHack Resource List
 
+pages:
+    - Home: index.md
+
 theme: material
-  # name: 'material'
-  # palette:
-  #   primary: 'teal'
-  #   secondary: 'blue'
