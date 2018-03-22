@@ -39,7 +39,15 @@
 * Custom Vision Service Docs <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home" target="_blank">Docs</a>
 * Custom Vision Python SDK (Linux) <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/python-tutorial" target="_blank">Ref</a>
 
-## Data
+**Notes on DSVM**
+
+* The `py35` environment contains the Azure ML CLI and must be activated in order to utilize it.
+    * To do so:  `/anaconda/envs/py35/bin/activate py35`
+* The `pip` command and `conda` command must include the path
+    * To call `pip`:  `/anaconda/envs/py35/bin/python -m pip install`
+    * To call `conda`:  `sudo /anaconda/envs/py35/bin/conda install`
+
+## Data Manipulation
 
 * Is your data ready for data science? <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/data-science-for-beginners-is-your-data-ready-for-data-science" target="_blank">Doc</a>
 
@@ -61,12 +69,12 @@
 ## First Custom ML
 
 * `scikit-learn` algorithm cheatsheet <a href="http://scikit-learn.org/stable/index.html" target="_blank">Ref</a>
-* Non-parametric and parametric algorithm differences <a href="https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/" target="_blank">Ref</a>
+* Non-parametric and parametric algorithm differences <a href="https://sebastianraschka.com/faq/docs/parametric_vs_nonparametric.html" target="_blank">Ref</a>
 * `scikit-learn` Machine Learning guide with vocabulary <a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html#introduction" target="_blank">Ref</a>
 * `scikit-learn` Supervised Learning <a href="http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html" target="_blank">Ref</a>
 * `scikit-learn` General User Guide <a href="http://scikit-learn.org/stable/user_guide.html" target="_blank">Ref</a>
 
-## Deep Learning
+## Classification with Deep Learning
 
 * What is a convolutional neural net <a href="https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/" target="_blank">Ref</a> or <a href="https://www.youtube.com/watch?v=FmpDIaiMIeA" target="_blank">Video</a>
 * High level overview of Machine Learning and CNNs <a href="https://youtu.be/k-K3g4FKS_c" target="_blank">Video</a>
@@ -82,7 +90,7 @@ Deep Learning Frameworks
     * <a href="https://www.microsoft.com/en-us/cognitive-toolkit/" target="_blank">Docs</a> And <a href="https://cntk.ai/pythondocs/tutorials.html" target="_blank">Tutorials</a>
     * Suggested starting point is a CNN from a Tutorial with the Layer API
 
-## Object Detection
+## Object Detection with Deep Learning
 
 * Visual Object Tagging Tool `VoTT`. Works for TensorFlow and CNTK <a href="https://github.com/Microsoft/VoTT" target="_blank">Ref</a>
 * When on Linux, the Tensorflow Object Detection API <a href="https://github.com/tensorflow/models/tree/master/research/object_detection" target="_blank">Ref</a>
@@ -94,12 +102,14 @@ Deep Learning Frameworks
 * Deployment walkthrough <a href="https://michhar.github.io/deploy-with-azureml-cli-boldly/" target="_blank">Ref</a>
 
 **More on Deployment**
+
 * Microsoft Blog on deploying from Azure ML Workbench and the Azure ML CLI <a href="https://blogs.technet.microsoft.com/machinelearning/2017/09/25/deploying-machine-learning-models-using-azure-machine-learning/" target="_blank">Ref</a>
 * Setting up with the Azure ML CLI for deployment 
 <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/deployment-setup-configuration" target="_blank">Doc</a>
 * Non-CLI deployment methods (AML alternative) <a href="https://github.com/Azure/ACS-Deployment-Tutorial" target="_blank">Ref</a>
 
 **Scoring File and Schema Creation References**
+
 * Example of schema generation <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-service-deploy#2-create-a-schemajson-file" target="_blank">Doc</a>
 * Example of the scoring file showing a CNTK model and serializing an image as a `PANDAS` data type for input data to service <a href="https://github.com/Azure/MachineLearningSamples-ImageClassificationUsingCntk/blob/master/scripts/deploymain.py" target="_blank">Ref</a>
 * Example of the scoring file showing a `scikit-learn` model and a `STANDARD` data type (json) for input data to service <a href="https://github.com/Azure/Machine-Learning-Operationalization/blob/master/samples/python/code/newsgroup/score.py" target="_blank">Ref</a>
