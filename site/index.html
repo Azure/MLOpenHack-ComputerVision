@@ -179,8 +179,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data" title="Data" class="md-nav__link">
-    Data
+  <a href="#data-manipulation" title="Data Manipulation" class="md-nav__link">
+    Data Manipulation
   </a>
   
 </li>
@@ -193,15 +193,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deep-learning" title="Deep Learning" class="md-nav__link">
-    Deep Learning
+  <a href="#classification-with-deep-learning" title="Classification with Deep Learning" class="md-nav__link">
+    Classification with Deep Learning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#object-detection" title="Object Detection" class="md-nav__link">
-    Object Detection
+  <a href="#object-detection-with-deep-learning" title="Object Detection with Deep Learning" class="md-nav__link">
+    Object Detection with Deep Learning
   </a>
   
 </li>
@@ -264,8 +264,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#data" title="Data" class="md-nav__link">
-    Data
+  <a href="#data-manipulation" title="Data Manipulation" class="md-nav__link">
+    Data Manipulation
   </a>
   
 </li>
@@ -278,15 +278,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#deep-learning" title="Deep Learning" class="md-nav__link">
-    Deep Learning
+  <a href="#classification-with-deep-learning" title="Classification with Deep Learning" class="md-nav__link">
+    Classification with Deep Learning
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#object-detection" title="Object Detection" class="md-nav__link">
-    Object Detection
+  <a href="#object-detection-with-deep-learning" title="Object Detection with Deep Learning" class="md-nav__link">
+    Object Detection with Deep Learning
   </a>
   
 </li>
@@ -359,7 +359,19 @@
 <li>Custom Vision Service Docs <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home" target="_blank">Docs</a></li>
 <li>Custom Vision Python SDK (Linux) <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/python-tutorial" target="_blank">Ref</a></li>
 </ul>
-<h2 id="data">Data</h2>
+<p><strong>Notes on DSVM</strong></p>
+<ul>
+<li>The <code>py35</code> environment contains the Azure ML CLI and must be activated in order to utilize it.<ul>
+<li>To do so:  <code>/anaconda/envs/py35/bin/activate py35</code></li>
+</ul>
+</li>
+<li>The <code>pip</code> command and <code>conda</code> command must include the path<ul>
+<li>To call <code>pip</code>:  <code>/anaconda/envs/py35/bin/python -m pip install</code></li>
+<li>To call <code>conda</code>:  <code>sudo /anaconda/envs/py35/bin/conda install</code></li>
+</ul>
+</li>
+</ul>
+<h2 id="data-manipulation">Data Manipulation</h2>
 <ul>
 <li>Is your data ready for data science? <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/data-science-for-beginners-is-your-data-ready-for-data-science" target="_blank">Doc</a></li>
 </ul>
@@ -381,12 +393,12 @@
 <h2 id="first-custom-ml">First Custom ML</h2>
 <ul>
 <li><code>scikit-learn</code> algorithm cheatsheet <a href="http://scikit-learn.org/stable/index.html" target="_blank">Ref</a></li>
-<li>Non-parametric and parametric algorithm differences <a href="https://machinelearningmastery.com/parametric-and-nonparametric-machine-learning-algorithms/" target="_blank">Ref</a></li>
+<li>Non-parametric and parametric algorithm differences <a href="https://sebastianraschka.com/faq/docs/parametric_vs_nonparametric.html" target="_blank">Ref</a></li>
 <li><code>scikit-learn</code> Machine Learning guide with vocabulary <a href="http://scikit-learn.org/stable/tutorial/basic/tutorial.html#introduction" target="_blank">Ref</a></li>
 <li><code>scikit-learn</code> Supervised Learning <a href="http://scikit-learn.org/stable/tutorial/statistical_inference/supervised_learning.html" target="_blank">Ref</a></li>
 <li><code>scikit-learn</code> General User Guide <a href="http://scikit-learn.org/stable/user_guide.html" target="_blank">Ref</a></li>
 </ul>
-<h2 id="deep-learning">Deep Learning</h2>
+<h2 id="classification-with-deep-learning">Classification with Deep Learning</h2>
 <ul>
 <li>What is a convolutional neural net <a href="https://ujjwalkarn.me/2016/08/11/intuitive-explanation-convnets/" target="_blank">Ref</a> or <a href="https://www.youtube.com/watch?v=FmpDIaiMIeA" target="_blank">Video</a></li>
 <li>High level overview of Machine Learning and CNNs <a href="https://youtu.be/k-K3g4FKS_c" target="_blank">Video</a></li>
@@ -408,7 +420,7 @@
 </ul>
 </li>
 </ul>
-<h2 id="object-detection">Object Detection</h2>
+<h2 id="object-detection-with-deep-learning">Object Detection with Deep Learning</h2>
 <ul>
 <li>Visual Object Tagging Tool <code>VoTT</code>. Works for TensorFlow and CNTK <a href="https://github.com/Microsoft/VoTT" target="_blank">Ref</a></li>
 <li>When on Linux, the Tensorflow Object Detection API <a href="https://github.com/tensorflow/models/tree/master/research/object_detection" target="_blank">Ref</a></li>
@@ -419,17 +431,21 @@
 <li>Overview of Azure ML model management <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-overview" target="_blank">Doc</a></li>
 <li>Deployment walkthrough <a href="https://michhar.github.io/deploy-with-azureml-cli-boldly/" target="_blank">Ref</a></li>
 </ul>
-<p><strong>More on Deployment</strong>
-<em> Microsoft Blog on deploying from Azure ML Workbench and the Azure ML CLI <a href="https://blogs.technet.microsoft.com/machinelearning/2017/09/25/deploying-machine-learning-models-using-azure-machine-learning/" target="_blank">Ref</a>
-</em> Setting up with the Azure ML CLI for deployment 
-<a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/deployment-setup-configuration" target="_blank">Doc</a>
-* Non-CLI deployment methods (AML alternative) <a href="https://github.com/Azure/ACS-Deployment-Tutorial" target="_blank">Ref</a></p>
-<p><strong>Scoring File and Schema Creation References</strong>
-<em> Example of schema generation <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-service-deploy#2-create-a-schemajson-file" target="_blank">Doc</a>
-</em> Example of the scoring file showing a CNTK model and serializing an image as a <code>PANDAS</code> data type for input data to service <a href="https://github.com/Azure/MachineLearningSamples-ImageClassificationUsingCntk/blob/master/scripts/deploymain.py" target="_blank">Ref</a>
-<em> Example of the scoring file showing a <code>scikit-learn</code> model and a <code>STANDARD</code> data type (json) for input data to service <a href="https://github.com/Azure/Machine-Learning-Operationalization/blob/master/samples/python/code/newsgroup/score.py" target="_blank">Ref</a>
-</em> After creating a <code>run</code> and <code>init</code> methods as in the links above, plus a schema file, begin with "Register a model" found in this <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-service-deploy#4-register-a-model">Doc</a>
-  * Note one change required:  there must be, if using certain frameworks, a <code>pip</code> requirements file (use <code>-p</code> flag) when creating the manifest</p>
+<p><strong>More on Deployment</strong></p>
+<ul>
+<li>Microsoft Blog on deploying from Azure ML Workbench and the Azure ML CLI <a href="https://blogs.technet.microsoft.com/machinelearning/2017/09/25/deploying-machine-learning-models-using-azure-machine-learning/" target="_blank">Ref</a></li>
+<li>Setting up with the Azure ML CLI for deployment 
+<a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/deployment-setup-configuration" target="_blank">Doc</a></li>
+<li>Non-CLI deployment methods (AML alternative) <a href="https://github.com/Azure/ACS-Deployment-Tutorial" target="_blank">Ref</a></li>
+</ul>
+<p><strong>Scoring File and Schema Creation References</strong></p>
+<ul>
+<li>Example of schema generation <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-service-deploy#2-create-a-schemajson-file" target="_blank">Doc</a></li>
+<li>Example of the scoring file showing a CNTK model and serializing an image as a <code>PANDAS</code> data type for input data to service <a href="https://github.com/Azure/MachineLearningSamples-ImageClassificationUsingCntk/blob/master/scripts/deploymain.py" target="_blank">Ref</a></li>
+<li>Example of the scoring file showing a <code>scikit-learn</code> model and a <code>STANDARD</code> data type (json) for input data to service <a href="https://github.com/Azure/Machine-Learning-Operationalization/blob/master/samples/python/code/newsgroup/score.py" target="_blank">Ref</a></li>
+<li>After creating a <code>run</code> and <code>init</code> methods as in the links above, plus a schema file, begin with "Register a model" found in this <a href="https://docs.microsoft.com/en-us/azure/machine-learning/preview/model-management-service-deploy#4-register-a-model">Doc</a></li>
+<li>Note one change required:  there must be, if using certain frameworks, a <code>pip</code> requirements file (use <code>-p</code> flag) when creating the manifest</li>
+</ul>
 <p><strong>Docker</strong></p>
 <ul>
 <li>Docker Docs <a href="https://docs.docker.com/get-started/" target="_blank">Ref</a></li>
