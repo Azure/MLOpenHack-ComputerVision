@@ -1,6 +1,0 @@
-site_name: Computer Vision ML OpenHack Resource List
-
-pages:
-    - Home: index.md
-
-theme: material
