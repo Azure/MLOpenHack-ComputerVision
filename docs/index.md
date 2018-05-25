@@ -39,14 +39,6 @@
 * Custom Vision Service Docs <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home" target="_blank">Docs</a>
 * Custom Vision Python SDK (Linux) <a href="https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/python-tutorial" target="_blank">Ref</a>
 
-**Notes on DSVM**
-
-* The `py35` environment contains the Azure ML CLI and must be activated in order to utilize it.
-    * To do so:  `/anaconda/envs/py35/bin/activate py35`
-* The `pip` command and `conda` command must include the path
-    * To call `pip`:  `/anaconda/envs/py35/bin/python -m pip install`
-    * To call `conda`:  `sudo /anaconda/envs/py35/bin/conda install`
-
 ## Data Manipulation
 
 * Is your data ready for data science? <a href="https://docs.microsoft.com/en-us/azure/machine-learning/studio/data-science-for-beginners-is-your-data-ready-for-data-science" target="_blank">Doc</a>
@@ -125,12 +117,14 @@ Deep Learning Frameworks
 **Longer Courses**
 
 * Coursera courses from Andrew Ng on [traditional](https://www.coursera.org/learn/machine-learning) and [deep learning](https://www.coursera.org/specializations/deep-learning)
-* Microsoft Professional Program [Data Science](https://academy.microsoft.com/en-us/professional-program/tracks/data-science/)
-* **Coming Soon** Microsoft Professional Program [Artificial Intelligence](https://academy.microsoft.com/en-us/professional-program/tracks/artificial-intelligence/)
+* Microsoft Professional Program for [Data Science](https://academy.microsoft.com/en-us/professional-program/tracks/data-science/)
+* Microsoft Professional Program for [Artificial Intelligence](https://academy.microsoft.com/en-us/professional-program/tracks/artificial-intelligence/)
 
 **Videos**
 
+* Deep Learning Simplified - no math, very basic intro series [Link](https://www.youtube.com/channel/UC9OeZkIwhzfv-_Cb7fCikLQ/videos)
 * Channel 9 AI Show [Link](https://channel9.msdn.com/Shows/AI-Show)
+* Brandon Rhoher's YouTube channel with ML/DL introductory videos [Link](https://www.youtube.com/user/BrandonRohrer/videos)
 
 **Tutorials/Examples**
 
@@ -144,3 +138,16 @@ Deep Learning Frameworks
 **Competitions**
 
 * Kaggle has competitions and can be a source of datasets and interesting notebooks [Link](https://www.kaggle.com/)
+
+
+## Links from Tech Talks
+
+| Talk | Links |
+| --- | --- |
+| Scikit-Learn Liner Regression | [Notebooks](https://notebooks.azure.com/DaveVoyles/libraries/DVTestLib/tree/Open%20Hack%20Talks)
+| Team Data Science Process | [Algorithm Cheatsheet](https://docs.microsoft.com/en-us/azure/machine-learning/studio/algorithm-cheat-sheet), [Team Data Science Process Lifecycle](https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/lifecycle), [TDSP Template](https://github.com/Azure/Azure-TDSP-ProjectTemplate), [Handrawn data science diagram](https://github.com/PythonWorkshop/intro-to-sklearn/blob/master/imgs/ml_process_by_micheleenharris.png) |
+
+## Misc
+
+* [Understanding what's going on in a CNN diagram](http://scs.ryerson.ca/~aharley/vis/conv/)
+* [Great book for ML Beginner's on AI and Python](https://www.packtpub.com/big-data-and-business-intelligence/artificial-intelligence-python)
